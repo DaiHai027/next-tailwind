@@ -19,12 +19,12 @@ export default function movie() {
                     </div>
                     <div className="flex grow"></div>
                     <button className="flex flex-row gap-2 my-3  ">
-                        <span className="text-xl sm:hidden  md:hidden lg:block" onClick={()=>{router.push('/')}}>Logout</span>
+                        <span className="text-xl hidden lg:block" onClick={()=>{router.push('/')}}>Logout</span>
                         <img src={LogoutImg.src} alt="logout" className="w-6 h-6"  onClick={()=>{router.push('/')}}/>
                     </button>
                 </div>
             
-                <div className="grid lg:grid-cols-4 md:grid-cols-3  items-center gap-6 justify-center py-32 sm:grid-cols-2">
+                <div className="grid lg:grid-cols-4   grid-cols-2 items-center gap-6 justify-center py-32 ">
                     <MovieItem />
                     <MovieItem />
                     <MovieItem />
